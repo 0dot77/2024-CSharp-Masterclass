@@ -7,9 +7,14 @@ Console.WriteLine("[E]xit");
 
 var userChoice = Console.ReadLine();
 
-var number = 10;
-var isLargerThan4AndSmallerThan9 = number > 4 && number < 9;
-var isEqualTo2OrLargerThan6 = number == 2 || number > 6;
+if(userChoice == "ABC")
+{
+    Console.WriteLine("User typed ABC");
+}
+else
+{
+    Console.WriteLine("User did not typed ABC");
+}
 
 Console.ReadKey();
 
