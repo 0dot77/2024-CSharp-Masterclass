@@ -7,15 +7,20 @@ Console.WriteLine("[E]xit");
 
 var userChoice = Console.ReadLine();
 
-if(userChoice == "ABC")
+switch(userChoice)
 {
-    Console.WriteLine("User typed ABC");
+    case "s":
+    case "S":
+        PrintSelectedOption("See all TODOs");
+        break;
 }
-else
+
+if (userChoice == "S")
 {
-    Console.WriteLine("User did not typed ABC");
+    PrintSelectedOption("See all TODOs");
 }
 
-Console.ReadKey();
-
-
+void PrintSelectedOption(string selectedOption)
+{
+    Console.WriteLine("Selected Option: " + selectedOption);
+}
